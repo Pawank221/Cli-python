@@ -1,21 +1,13 @@
 from package import (
-do_news,do_quote,do_wallpaper,do_movies,do_youtube
+do_news,do_quote,do_wallpaper
 )
-
 
 import cmd
 import sys
 class FirstCmdApplication(cmd.Cmd):
-    try:
-        intro = "Welcome {username}!".format(username=sys.argv[1])
-    except IndexError:
-        print("Please provide your username!")
-        exit()
-    prompt = 'Cli: '
 
-    def do_youtube(self,arg):
-        "youtube video"
-        do_youtube()
+
+
 
     def do_history(self, arg):
         "not working"
@@ -24,10 +16,6 @@ class FirstCmdApplication(cmd.Cmd):
     def do_news(self, arg):
         "Read today's news"
         do_news()
-
-    def do_movies(self,title):
-        "get movies ratings n info"
-        do_movies(title)
 
     def do_quotes(self, arg):
         "Read quote of the day"

@@ -1,7 +1,7 @@
 import requests
 import sys
 
-url = 'http://quotes.rest/qod.json'
+url = ('http://quotes.rest/qod.json')
 
 quote_format = """
  ----------------------------------
