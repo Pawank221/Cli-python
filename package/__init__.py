@@ -20,6 +20,8 @@
 from .news import do_news
 from .quote import do_quote
 from .wallpaper import do_wallpaper
+from .movie import do_movies
+from .youtube import do_youtube
 
 
 
